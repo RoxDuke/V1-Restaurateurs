@@ -1,0 +1,134 @@
+$primary:#042A2B;
+$secondary: #CDEDF6;
+$tertiary:#EF7B45;
+
+// @font-face {
+//     font-family: "roboto";
+//     src: url("../polices/roboto/Roboto-Black.woff") format('woff'),
+//     url("../polices/roboto/Roboto-Black.ttf") format('truetype');
+// }
+
+// @font-face {
+//     font-family: "roboto_light";
+//     src: url("../polices/roboto/Roboto-Light.woff") format('woff'),
+//     url("..//polices/roboto/Roboto-Light.ttf") format('truetype');
+// }
+
+// @font-face {
+//     font-family: "shrikhand";
+//     src: url("../polices/shrikhand/Shrikhand-Regular.woff") format('woff'),
+//     url("../polices/shrikhand/Shrikhand-Regular.ttf") format('truetype');
+// }
+
+@mixin layout /*propriétés mise en page pour les menus*/
+{
+    display: flex; 
+    flex-direction: row;            
+    box-shadow: 5px 5px 5px rgb(213, 209, 209);
+    border-radius: 15px;
+    margin: 10px;
+    background: white;
+    justify-content: space-between;
+    
+    .detail{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+}
+@mixin ellipse
+{
+    .elipse
+    {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 210px;
+    }
+}
+@mixin mensuration
+{
+    width: 100%; 
+}
+
+@mixin select /*check circle lors de l'animation*/
+{
+    .coche
+    {
+    animation-fill-mode: forwards;
+    padding-top: 20px;
+    animation-duration: 1s;
+    animation-name: selected;
+   
+    
+    }
+    .fa-check-circle
+    {
+        animation-name: pirouette;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes disapear /*animations loader background*/
+{
+    99%{
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+    100%{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes spin /*animation spinner loader*/
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes progress /*remplissage des coeurs progressif*/
+{
+    0%{
+        opacity: 0.33;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes selected /*animations selections plats*/
+        {
+            0% {
+            width: 20px;
+            }
+        
+            100% {
+            width: 50px;
+            background-color:#99E2D0;
+            height: 40px;
+            visibility: visible;
+            border-radius: 0px 10px 10px 0px;
+            }
+        }
+@keyframes pirouette
+{
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
