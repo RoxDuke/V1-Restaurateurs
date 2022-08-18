@@ -174,7 +174,7 @@ input{
     border-radius: 10px;
     margin-top: 5px;
     color: white;
-    
+
 }        
 #card{
     @include layout;
@@ -225,45 +225,27 @@ footer /*pied de page*/
         {
             display: flex;
             flex-direction: column;
-            padding: 10px;
             color: $secondary;
-            padding-left: 30px;
-            padding-bottom: 20px;
+            padding-left: 10px;
             font-size: large;
         }
                 h2
                 {
                     color: white;
                     font-size: large;
+                    text-align: center;
                 }
 
-                .foot
-                {
-                    padding: 5px;  
+                ul{
+                    font-size: small;
+                    display: flex;
                 }
-                    .police
-                    {
-                        display: flex;
-                        flex-direction: column;
-                        font-family: "roboto_light";
-                        padding: 5px;
-                    }
-                    span
-                    {
-                        padding-top: 5px;
-                    }
-
-                    i
-                    {
-                        padding-right: 10px;
-                        font-size: small;
-                    }   
-
-                    a
-                    {
-                        text-decoration:none;
-                        color:white;
-                    }
+                li{
+                    list-style: none;
+                    padding: 5px;
+                    margin-left: 25px;
+                    
+                }
 }       
 
                                
