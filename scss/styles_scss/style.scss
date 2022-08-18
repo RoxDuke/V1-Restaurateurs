@@ -164,9 +164,21 @@ header img
                 font-size: large;
                 padding-left: 100px;
             }
-        }      
+        }   
+ 
+input{
+    font-size: large;
+    background-color: $tertiary;
+    padding: 15px;
+    margin-left: 35%;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: white;
+    
+}        
 #card{
     @include layout;
+    @include layoutSlide;
 }
 #card1{
     @include layout;

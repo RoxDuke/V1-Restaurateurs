@@ -49,7 +49,6 @@ $tertiary:#EF7B45;
     }
 
 }
-
 @mixin layoutSlide {
     * {
         box-sizing: border-box
@@ -62,10 +61,10 @@ $tertiary:#EF7B45;
         margin: 0px;
         height: 550px;
 
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
-        }
+        // /* Hide the images by default */
+        // .mySlides {
+        //     display: none;
+        // }
 
         img {
             border-radius: 10px;
