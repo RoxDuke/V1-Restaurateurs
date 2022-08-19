@@ -1,282 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="scss/styles_scss/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="image/ohmyfood.png">
-        <title>Restaurant</title>
-    </head>
 
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="scss/styles_scss/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/ohmyfood.png">
+  <title>Restaurant</title>
+</head>
 
-    <header>
-       <div class="logo">
+<body>
+
+  <header>
+    <div class="logo">
+    </div>
+  </header>
+
+  <section>
+    <div class="title">
+      <h1>RESTAURANT 31</h1>
+    </div>
+
+    <div class="introduction">
+      <h1>Découvrez notre carte aux milles et une saveurs !</h1>
+      <p>Préparés par nos soins avec des produits de qualités.</p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">NOTRE CARTE</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#card">Nos menus</a>
+          <a href="#card1">À la carte</a>
+          <a href="#card2">Boissons</a>
+          <a href="#card4">Vins</a>
         </div>
-    </header>
+      </div>
+    </div>
 
-    <section>
-            <div class="title">
-                <h1>RESTAURANT 31</h1>
-            </div>
+    <div class="choice">
+      <h1>Bienvenu au Restaurant 31 </h1>
+      <p>Prenez le temps de découvrir nos produits en consultant nos menus,
+        une fois que vous avez trouvé ce qui vous faisait envie,
+        n'hésitez pas à faire signe pour appeler un serveur.</p>
+      <p>*Vous pouvez choisir les entrées/plats/desserts à la carte pour créer votre propre menu,
+        se référer au prix indiqué juste en face de celui-ci. </p>
+    </div>
 
-        <div class="introduction">
-            <h1>Découvrez notre carte aux milles et une saveurs !</h1>
-            <p>Préparés par nos soins avec des produits de qualités.</p>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">NOTRE CARTE</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#card">Nos menus</a>
-                  <!-- <a href="#card1">Plats</a> -->
-                  <!-- <a href="#card2">Desserts</a> -->
-                  <a href="#card3">Boissons</a>
-                  <a href="#card4">Vins</a>
-                  <a href="#">Nous suivre</a>
-                </div>
-            </div>
+    <div id="card" style="width: 90%">
+      <div class="card-body">
+        <h2>NOS MENUS</h2>
+        <p>Entrée + Plat = 25 €</p>
+        <p>Entrée + Plat + Dessert = 30 €</p>
+        <p>Plat + Dessert = 28 €</p>
+
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./assets/drink.jpg" style="width:100%">
+            <a href="menu1.html" class="text">Menu healthy</a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./assets/burger.jpg" style="width:100%">
+            <a href="menu2.html" class="text">Menu food</a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./assets/smoothie.jpg" style="width:100%">
+            <a href="menu1.html" class="text">Menu vegi</a>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        
-        <div class="choice">
-            <h1>Bienvenu au Restaurant 31 </h1>
-            <p>Prenez le temps de découvrir nos produits en consultant nos menus, 
-              une fois que vous avez trouvé ce qui vous faisait envie,
-              n'hésitez pas à faire signe pour appeler un serveur.</p>
-              <p>*Vous pouvez choisir les entrées/plats/desserts à la carte pour créer votre propre menu,
-                se référer au prix indiqué juste en face de celui-ci. </p>
+      </div>
+    </div>
+
+    <div id="card1" style="width:90%">
+
+      <div class="card-body">
+        <h2>À LA CARTE</h2>
+        <h3>ENTRÉES - PLATS - DESSERTS</h3>
+
+        <div id="slider">
+          <img src="./assets/burger.jpg" alt="La forêt de peupliers" id="slide">
+          <a href="menu1.html" class="text">TOUT VOIR</a>
+
+
+          <div id="precedent" onclick="ChangeSlide(-1)"></div>
+          <div id="suivant" onclick="ChangeSlide(1)"></div>
         </div>
-
-        
-
-
-<div id="card" style="width: 90%;">
-    <div class="card-body">
-      <h2>NOS MENUS</h2>
-      <p>Entrée + Plat = 25 €</p>
-      <p>Entrée + Plat + Dessert = 30 €</p>
-      <p>Plat + Dessert = 28 €</p>
-
-
-    <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/drink.jpg" style="width:100%">
-        <a href="menu1.html" class="text">Menu healthy</a>
       </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/burger.jpg" style="width:100%">
-        <a href="menu2.html" class="text">Menu food</a>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/smoothie.jpg" style="width:100%">
-        <a href="menu1.html" class="text">Menu vegi</a>
-      </div>
-    
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <!-- <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+
+    <div id="card2" style="width: 90%">
+
+      <div class="card-body">
+        <h2>LES BOISSONS</h2>
+        <img src="./assets/drink.jpg" alt="vin">
+
+        <h3>À LA CARTE</h3>
+        <div id="card1" style="width:90%">
+          <ul class="list-group">
+            <li>Eiusmod aliquip laborum <strong>5 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>8 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>6 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>4 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>5€</strong></li>
+          </ul>
+        </div>
+      </div>
     </div>
- </div>  -->
 
+    <div id="card3" style="width: 90%">
 
-   </div> 
-  </div>
-        
-  <!-- <div id="card1" style="width: 18rem;">
+      <div class="card-body">
+        <h2>NOS VINS</h2>
+        <img src="./assets/drink.jpg" alt="vin">
 
-    <div class="card-body">
-      <h2>NOS PLATS</h2>
-      <p>Entrée + Plat = 30 €</p>
-      <p>Entrée + Plat + Dessert = 30 €</p>
-
-    <h3>À LA CARTE</h3> -->
-
-    <!-- <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/drink.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <h3>À LA CARTE</h3>
+        <div id="card1" style="width:90%">
+          <ul class="list-group">
+            <li>Eiusmod aliquip laborum <strong>5 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>8 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>6 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>4 €</strong></li>
+            <li>Eiusmod aliquip laborum <strong>5€</strong></li>
+          </ul>
+        </div>
       </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/burger.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/smoothie.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-     -->
-    <!-- The dots/circles -->
-    <!-- <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div> -->
- <!-- </div> 
 
-  </div> -->
+  </section>
 
-  <!-- <div id="card2" style="width: 18rem;">
-    <div class="card-body">
-      <h2>NOS DESSERTS</h2>
-      <p>Entrées + Plats + Dessert = 30 €</p>
+  <footer>
 
-    <h3>À LA CARTE</h3> -->
-     <!-- <div class="slideshow-container">
+    <div class="bloc_footer">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/drink.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/burger.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/smoothie.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <h2>Restaurant 31</h2>
+      <ul>
+        <li>Mentions légales</li>
+        <li>Nous suivre</li>
+      </ul>
+
     </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
- </div>  -->
+  </footer>
 
-  <!-- </div>
+  <script src="script.js"></script>
+</body>
 
-  <div id="card3" style="width: 18rem;">
-
-    <div class="card-body">
-      <h2>LES BOISSONS</h2>
-
-    <h3>À LA CARTE</h3> -->
-    <!-- <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/drink.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/burger.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/smoothie.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
- </div>  -->
-
-  <!-- </div>
-
-  <div id="card4" style="width: 18rem;">
-
-    <div class="card-body">
-      <h2>NOS VINS</h2>
-
-    <h3>À LA CARTE</h3> -->
-
-    <!-- <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./assets/drink.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./assets/burger.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./assets/smoothie.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-    
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
- </div>  -->
-
-  <!-- </div> -->
-
-
-        </section>
-
-        <footer>
-
-            <div class="bloc_footer">
-
-            <h2>Restaurant test</h2>
-            <ul>
-              <li>Mentions légales</li>
-              <li>Nous suivre</li>
-            </ul>
-                   
-            </div>
-        </footer>
-
-        <script src="script.js"></script>
-        </body>
-        
-    </html>
+</html>

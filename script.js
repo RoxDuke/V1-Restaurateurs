@@ -42,5 +42,19 @@ function myFunction() {
       dots[i].className = dots[i].className.replace(" active");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1] += " active";
+  }
+
+
+
+let slide = new Array("./assets/burger.jpg", "./assets/smoothie.jpg","./assets/sushis.jpg");
+let numero = 0;
+  
+  function ChangeSlide(sens) {
+      numero = numero + sens;
+      if (numero < 0)
+          numero = slide.length - 1;
+      if (numero > slide.length - 1)
+          numero = 0;
+      document.getElementById("slide").src = slide[numero];
   }

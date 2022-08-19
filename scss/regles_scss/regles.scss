@@ -22,27 +22,27 @@ $tertiary:#EF7B45;
 
 @mixin layout /*propriétés mise en page pour les menus*/
 {
-    border:2px solid black;
     margin: auto;
     background-color: #FEFAE0;
     border-radius: 10px;
-    margin-top: 20px;
-
-    img{
-        width: 260px;
-        margin-left: 15px;
-        margin-top: 5px;
-        object-fit: cover;
-        height: 100px;        
-    }
+    // img{
+    //     width: 260px;
+    //     margin-left: 15px;
+    //     margin-top: 5px;
+    //     object-fit: cover;
+    //     height: 100px;        
+    // }
     h2{
         text-align: center;
+        margin-top: 30px;
+        padding-top: 10px;
     }
     p{
         text-align: center;
         font-weight: 600;
         font-size: large;
     }
+  
     h3{
         text-align: center;
         margin-top: 35px;
@@ -69,6 +69,7 @@ $tertiary:#EF7B45;
         img {
             border-radius: 10px;
             height: 450px;
+            margin-left: 15px;
         }
 
         /* Next & previous buttons */
@@ -106,7 +107,7 @@ $tertiary:#EF7B45;
             position: absolute;
             bottom: 8px;
             width: 90%;
-            margin-left: 28px;
+            margin-left: 30px;
             text-align: center;
         }
 
