@@ -178,6 +178,9 @@ input{
 }        
 img{
     width: 150px;
+    margin-left: 65px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 #card{
     @include layout;
@@ -186,6 +189,7 @@ img{
 #card1{
     @include layout;
     @include layoutSlide;
+    padding-bottom: 8px;
     #slider {
         position: relative;
         width: 350px;
@@ -198,7 +202,7 @@ img{
     img{
         object-fit: cover;
         width: 290px;
-        height: 450px;
+        height: 440px;
         margin-left: 16px;
         border-radius: 10px;
     }
@@ -264,6 +268,7 @@ img{
     
     li{
         padding: 5px;
+        margin-bottom: 15px;
     }
 }
 
