@@ -3,7 +3,7 @@
 
 body  
 {
-    margin: 0;
+    margin: -4px;
     background-color: $primary;
     @media#{$desktop}
     {
@@ -174,6 +174,16 @@ input{
     border-radius: 10px;
     margin-top: 5px;
     color: white;
+    @media #{$tablet}
+        {
+            margin-left: 43%;
+            margin-bottom: 5px;
+        }
+        @media#{$desktop}
+        {
+            margin-bottom: 20px;
+            margin-left: 45%;
+        }
 
 }        
 img{
@@ -181,6 +191,18 @@ img{
     margin-left: 65px;
     border-radius: 10px;
     margin-top: 10px;
+    @media #{$tablet}
+        {
+            margin-left: 202px;
+            width: 250px;
+        }
+            @media#{$desktop}
+            {
+                width: 300px;
+                height: auto;
+                margin-left: 33%;
+            }
+        
 }
 #card{
     @include layout;
@@ -197,6 +219,18 @@ img{
         margin: auto;
         display: flex;
         align-items: center;
+        @media #{$tablet}
+        {
+            width: 468px;
+            margin-left: 126px;
+            height: auto;
+        }
+        @media#{$desktop}
+        {
+           width: 57%;
+           margin-left: 27%;
+           height: auto;
+        }
     }
     
     img{
@@ -205,6 +239,16 @@ img{
         height: 440px;
         margin-left: 16px;
         border-radius: 10px;
+        @media #{$tablet}
+        {
+            width: 443px;
+            height: 438px;
+        }
+        @media#{$desktop}
+        {
+            width: 445px;
+            height: 520px ;
+        }
     }
     a{
         color: #FEFAE0;
@@ -216,6 +260,15 @@ img{
             width: 70%;
             margin-left: 40px;
             text-align: center;
+            @media #{$tablet}
+        {
+            width: 83%;
+            margin-left: 42px;
+        }
+        @media#{$desktop}
+        {
+            align-items: center;
+        }
     }
     #precedent,
     #suivant {
@@ -227,6 +280,7 @@ img{
         color: rgba(220, 220, 220, 0.8);
         background-color: rgba(0, 0, 0, 0.8);
         padding: 10px;
+        
     }
     
     #precedent {
@@ -234,7 +288,11 @@ img{
     }
     
     #suivant {
-        right: 0;
+        right: 26px;
+        @media#{$desktop}
+        {
+            right: 90px;
+        }
     }
     
     #slider:hover #precedent,
@@ -250,6 +308,18 @@ img{
         height: 220px;
         margin-left: 35px;
         border-radius: 10px;
+        @media #{$tablet}
+        {
+            margin-left: 236px;
+            height: 350px;
+        }
+        @media#{$desktop}
+        {
+            width: 300px;
+            height: auto;
+            margin-left: 35%;
+        }
+    
     }
 }
 #card3{
@@ -261,11 +331,29 @@ img{
         height: 220px;
         margin-left: 35px;
         border-radius: 10px;
+        @media #{$tablet}
+        {
+            margin-left: 236px;
+            height: 350px;
+        }
+        @media#{$desktop}
+        {
+            width: 300px;
+            height: auto;
+            margin-left: 35%;
+        }
     }
 }
 
 .list-group{
-    
+    @media #{$tablet}
+        {
+            margin-left: 195px;
+        }
+        @media#{$desktop}
+        {
+            margin-left: 36%;
+        }
     li{
         padding: 5px;
         margin-bottom: 15px;

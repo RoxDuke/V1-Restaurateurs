@@ -39,11 +39,33 @@ $tertiary: #EF7B45;
         position: relative;
         width: 90%;
         margin: 0px;
-        height: 450px;
+        height: 467px;
+        @media #{$tablet}
+        {
+            max-width: 475px;
+            margin-left: 118px;
+            height: auto;
+        }
+        @media#{$desktop}
+        {
+            margin-left: 220px;
+            height: auto;
+            max-width: 550px;
 
+        }
         img {
             border-radius: 10px;
             margin-left: 15px;
+            object-fit: cover;
+            height: 455px;
+        @media #{$tablet}
+        {
+            height: 670px;
+        }
+        @media#{$desktop}
+        {
+            height: 670px;
+        }
         }
 
         /* Next & previous buttons */
