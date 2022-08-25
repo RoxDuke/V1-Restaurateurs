@@ -146,6 +146,7 @@ header img
         p{
             text-align: center;
             font-size: large;
+            padding: 10px;
         }
        
         }
@@ -303,10 +304,10 @@ img{
 #card2{
     @include layout;
     img{
-        width: 250px;
+        width: 236px;
         object-fit: cover;
         height: 220px;
-        margin-left: 35px;
+        margin-left: 50px;
         border-radius: 10px;
         @media #{$tablet}
         {
@@ -326,10 +327,10 @@ img{
     @include layout;
 
     img{
-        width: 250px;
+        width: 236px;
         object-fit: cover;
         height: 220px;
-        margin-left: 35px;
+        margin-left: 50px;
         border-radius: 10px;
         @media #{$tablet}
         {
@@ -346,6 +347,7 @@ img{
 }
 
 .list-group{
+    margin-left: 25px;
     @media #{$tablet}
         {
             margin-left: 195px;
