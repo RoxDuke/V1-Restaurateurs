@@ -132,8 +132,11 @@ header img
     
     h1
     {
-        margin-left: 40px;
+        margin-left: 65px;
         margin-bottom: 0;
+        animation-name: slidein;
+        animation-duration: 4s;
+
         @media #{$tablet}
         {
             margin-left: 0;
@@ -147,6 +150,7 @@ header img
             text-align: center;
             font-size: large;
             padding: 10px;
+            
         }
        
         }
@@ -175,6 +179,7 @@ input{
     border-radius: 10px;
     margin-top: 5px;
     color: white;
+    
     @media #{$tablet}
         {
             margin-left: 43%;
@@ -187,24 +192,23 @@ input{
         }
 
 }        
-img{
-    width: 150px;
-    margin-left: 65px;
-    border-radius: 10px;
-    margin-top: 10px;
-    @media #{$tablet}
-        {
-            margin-left: 202px;
-            width: 250px;
-        }
-            @media#{$desktop}
-            {
-                width: 300px;
-                height: auto;
-                margin-left: 33%;
-            }
+// img{
+//     width: 150px;
+//     border-radius: 10px;
+//     margin-top: 10px;
+//     @media #{$tablet}
+//         {
+//             margin-left: 202px;
+//             width: 250px;
+//         }
+//             @media#{$desktop}
+//             {
+//                 width: 300px;
+//                 height: auto;
+//                 margin-left: 33%;
+//             }
         
-}
+// }
 #card{
     @include layout;
     @include layoutSlide;
@@ -223,22 +227,24 @@ img{
         @media #{$tablet}
         {
             width: 468px;
-            margin-left: 126px;
             height: auto;
         }
         @media#{$desktop}
         {
            width: 57%;
-           margin-left: 27%;
+           margin-left: 21%;
            height: auto;
         }
+    }
+    .text{
+        animation-name: zoom;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
     }
     
     img{
         object-fit: cover;
-        width: 310px;
         height: 440px;
-        margin-left: 16px;
         border-radius: 10px;
         @media #{$tablet}
         {
@@ -274,51 +280,51 @@ img{
     #precedent,
     #suivant {
         cursor: pointer;
-        transition: opacity 0.3s ease;
-        opacity: 0;
-        position: absolute;
-        font-size: 100px;
-        color: rgba(220, 220, 220, 0.8);
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 10px;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: $primary;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
         
     }
     
     #precedent {
-        left: 0;
+        left: -12px;
     }
     
     #suivant {
-        right: 26px;
+        right: -12px;
         @media#{$desktop}
         {
             right: 90px;
         }
     }
     
-    #slider:hover #precedent,
-    #slider:hover #suivant {
-        opacity: 1;
-    }
+    // #slider:hover #precedent,
+    // #slider:hover #suivant {
+    //     opacity: 1;
+    // }
 }
 #card2{
     @include layout;
     img{
-        width: 236px;
         object-fit: cover;
         height: 220px;
-        margin-left: 65px;
         border-radius: 10px;
+        width: 100%;
         @media #{$tablet}
         {
-            margin-left: 236px;
             height: 350px;
         }
         @media#{$desktop}
         {
-            width: 300px;
-            height: auto;
-            margin-left: 35%;
+            height: 400px;
         }
     
     }
@@ -327,34 +333,32 @@ img{
     @include layout;
 
     img{
-        width: 236px;
+        width: 100%;
         object-fit: cover;
         height: 220px;
-        margin-left: 65px;
         border-radius: 10px;
         @media #{$tablet}
         {
-            margin-left: 236px;
             height: 350px;
         }
         @media#{$desktop}
         {
-            width: 300px;
-            height: auto;
-            margin-left: 35%;
+            height: 400px;
         }
+    
     }
 }
 
 .list-group{
-    margin-left: 25px;
+    list-style: none;
+    text-align: justify;
     @media #{$tablet}
         {
-            margin-left: 195px;
+            margin-left: 155px;
         }
         @media#{$desktop}
         {
-            margin-left: 36%;
+            margin-left: 30%;
         }
     li{
         padding: 5px;
@@ -362,37 +366,46 @@ img{
     }
 }
 
-footer /*pied de page*/
-{
+footer
+
+/*pied de page*/
+    {
     background-color: $primary;
     border-top: 1px solid #FEFAE0;
     margin-top: 10px;
 
-        .bloc_footer
-        {
-            display: flex;
-            flex-direction: column;
-            color: $secondary;
-            padding-left: 10px;
-            font-size: large;
+    .bloc_footer {
+        display: flex;
+        flex-direction: column;
+        color: $secondary;
+        padding-left: 10px;
+        font-size: large;
+    }
+
+    h2 {
+        color: white;
+        font-size: large;
+        text-align: center;
+    }
+
+    ul {
+        font-size: small;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 5px;
+        margin-left: 46px;
+
+        @media #{$tablet} {
+            margin-left: 165px;
         }
-                h2
-                {
-                    color: white;
-                    font-size: large;
-                    text-align: center;
-                }
 
-                ul{
-                    font-size: small;
-                    display: flex;
-                }
-                li{
-                    list-style: none;
-                    padding: 5px;
-                    margin-left: 25px;
-                    
-                }
-}       
+        @media#{$desktop} {
+            
+        }
 
+    }
+}
                                
