@@ -236,7 +236,7 @@ img{
     
     img{
         object-fit: cover;
-        width: 290px;
+        width: 310px;
         height: 440px;
         margin-left: 16px;
         border-radius: 10px;
@@ -258,7 +258,7 @@ img{
             padding: 8px 12px;
             position: absolute;
             bottom: 8px;
-            width: 70%;
+            width: 75%;
             margin-left: 40px;
             text-align: center;
             @media #{$tablet}
@@ -307,7 +307,7 @@ img{
         width: 236px;
         object-fit: cover;
         height: 220px;
-        margin-left: 50px;
+        margin-left: 65px;
         border-radius: 10px;
         @media #{$tablet}
         {
@@ -330,7 +330,7 @@ img{
         width: 236px;
         object-fit: cover;
         height: 220px;
-        margin-left: 50px;
+        margin-left: 65px;
         border-radius: 10px;
         @media #{$tablet}
         {

@@ -395,7 +395,7 @@ img {
 #card .slideshow-container {
   position: relative;
   width: 90%;
-  margin: 0px;
+  margin: 3px;
   height: 467px;
   /* Next & previous buttons */
   /* Number text (1/3 etc) */
@@ -563,7 +563,7 @@ img {
 #card1 .slideshow-container {
   position: relative;
   width: 90%;
-  margin: 0px;
+  margin: 3px;
   height: 467px;
   /* Next & previous buttons */
   /* Number text (1/3 etc) */
@@ -722,7 +722,7 @@ img {
 #card1 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 290px;
+  width: 310px;
   height: 440px;
   margin-left: 16px;
   border-radius: 10px;
@@ -749,7 +749,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 70%;
+  width: 75%;
   margin-left: 40px;
   text-align: center;
 }
@@ -829,7 +829,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 220px;
-  margin-left: 50px;
+  margin-left: 65px;
   border-radius: 10px;
 }
 
@@ -876,7 +876,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 220px;
-  margin-left: 50px;
+  margin-left: 65px;
   border-radius: 10px;
 }
 
