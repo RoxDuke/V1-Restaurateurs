@@ -3,7 +3,7 @@
 
 body  
 {
-    margin: -4px;
+    margin: 0%;
     background-color: $primary;
     @media#{$desktop}
     {
@@ -134,8 +134,8 @@ header img
     {
         margin-left: 65px;
         margin-bottom: 0;
-        animation-name: slidein;
-        animation-duration: 4s;
+        // animation-name: slidein;
+        // animation-duration: 4s;
 
         @media #{$tablet}
         {

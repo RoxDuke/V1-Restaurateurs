@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="scss/styles_scss/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="image/ohmyfood.png">
   <title>Restaurant</title>
 </head>
@@ -34,16 +35,16 @@
         </div>
       </div>
     </div>
-
-    <div class="choice">
-      <h1>Bienvenu au Restaurant 31 </h1>
-      <p>Prenez le temps de découvrir nos produits en consultant nos menus,
-        une fois que vous avez trouvé ce qui vous faisait envie,
-        n'hésitez pas à faire signe pour appeler un serveur.</p>
-      <p>*Vous pouvez choisir les entrées/plats/desserts à la carte pour créer votre propre menu,
-        se référer au prix indiqué juste en face de celui-ci. </p>
+    <div data-aos="zoom-out">
+      <div class="choice">
+        <h1>Bienvenu au Restaurant 31 </h1>
+        <p>Prenez le temps de découvrir nos produits en consultant nos menus,
+          une fois que vous avez trouvé ce qui vous faisait envie,
+          n'hésitez pas à faire signe pour appeler un serveur.</p>
+        <p>*Vous pouvez choisir les entrées/plats/desserts à la carte pour créer votre propre menu,
+          se référer au prix indiqué juste en face de celui-ci. </p>
+      </div>
     </div>
-
     <div id="card" style="width: 100%">
       <div class="card-body">
         <h2>NOS MENUS</h2>
@@ -98,43 +99,47 @@
       </div>
     </div>
 
-    <div id="card2" style="width: 100%">
+    <!-- <div data-aos="fade-down-right"> -->
+      <div id="card2" style="width: 100%">
 
-      <div class="card-body">
-        <h2>LES BOISSONS</h2>
-        <img src="./assets/drink.jpg" alt="vin">
+        <div class="card-body">
+          <h2>LES BOISSONS</h2>
+          <img src="./assets/drink.jpg" alt="vin">
 
-        <h3>À LA CARTE</h3>
-        <div id="card1" style="width:90%">
-          <ul class="list-group">
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>5 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>8 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>6 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>4 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>5€</strong></li>
-          </ul>
+          <h3>À LA CARTE</h3>
+          <div id="card1" style="width:90%">
+            <ul class="list-group">
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>5 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>8 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>6 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>4 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>5€</strong></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
+    <!-- <div data-aos="fade-up-left"> -->
+      <div id="card3" style="width: 100%">
 
-    <div id="card3" style="width: 100%">
-
-      <div class="card-body">
-        <h2>NOS VINS</h2>
-        <img src="./assets/drink.jpg" alt="vin">
-
-        <h3>À LA CARTE</h3>
-        <div id="card1" style="width:90%">
-          <ul class="list-group">
-            <li>Eiusmod aliquip laborum aliquip laboruma  <strong>5 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma  <strong>8 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma  <strong>6 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma <strong>4 €</strong></li>
-            <li>Eiusmod aliquip laborum aliquip laboruma  <strong>5€</strong></li>
-          </ul>
+        <div class="card-body">
+          <h2>NOS VINS</h2>
+          <img src="./assets/drink.jpg" alt="vin">
         </div>
+          <h3>À LA CARTE</h3>
+          <div id="card1" style="width:90%">
+            <ul class="list-group">
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>5 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>8 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>6 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>4 €</strong></li>
+              <li>Eiusmod aliquip laborum aliquip laboruma <strong>5€</strong></li>
+            </ul>
+          </div>
+
       </div>
-    </div>
+
+    <!-- </div> -->
 
   </section>
 
@@ -153,5 +158,10 @@
 
   <script src="script.js"></script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </html>

@@ -51,7 +51,7 @@
 }
 
 body {
-  margin: -4px;
+  margin: 0%;
   background-color: #042A2B;
 }
 
@@ -193,10 +193,6 @@ header img {
 .choice h1 {
   margin-left: 65px;
   margin-bottom: 0;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
