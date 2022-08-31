@@ -9,3 +9,6 @@ Front-End :
 - JavaScript
 
 Back-End :
+- Packages npm
+- Node JS V12.22.9
+- Express V4.18.1
