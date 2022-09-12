@@ -52,7 +52,7 @@
 
 body {
   margin: 0%;
-  background-color: #042A2B;
+  background-color: #303030;
 }
 
 @media only screen and (min-width:1024px) {
@@ -72,14 +72,14 @@ header img {
   border: none;
   padding: 15px;
   text-align: center;
-  background-color: #042A2B;
+  background-color: #303030;
   border-bottom: 1px solid #FEFAE0;
 }
 
 .title h1 {
   border: none;
-  background-color: #042A2B;
-  color: #CDEDF6;
+  background-color: #303030;
+  color: #fbfbfb;
   text-align: center;
   font-weight: bold;
   font-size: large;
@@ -98,8 +98,8 @@ header img {
           align-items: center;
   padding: 20px;
   padding-bottom: 50px;
-  background-color: #042A2B;
-  color: #CDEDF6;
+  background-color: #303030;
+  color: #fbfbfb;
 }
 
 .introduction h1 {
@@ -112,10 +112,11 @@ header img {
 }
 
 .dropbtn {
-  background-color: #EF7B45;
-  color: white;
+  background-color: #FEFAE0;
+  color: black;
+  font-weight: 700;
   padding: 16px;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   border-radius: 10px;
@@ -123,7 +124,7 @@ header img {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #EF7B45;
+  background-color: #FEFAE0;
 }
 
 .dropdown {
@@ -153,7 +154,7 @@ header img {
 }
 
 .dropdown .dropdown-content a:hover {
-  background-color: #EF7B45;
+  background-color: #FEFAE0;
   color: white;
 }
 
@@ -169,7 +170,7 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FEFAE0;
+  background: #fbfbfb;
   padding-top: 30px;
   padding-bottom: 40px;
 }
@@ -234,12 +235,14 @@ span {
 
 input {
   font-size: large;
-  background-color: #EF7B45;
+  background-color: #FEFAE0;
   padding: 15px;
   margin-left: 35%;
   border-radius: 10px;
   margin-top: 5px;
-  color: white;
+  color: #303030;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -258,7 +261,7 @@ input {
 
 #card {
   margin: auto;
-  background-color: #FEFAE0;
+  background-color: #fbfbfb;
   border-radius: 10px;
 }
 
@@ -276,7 +279,10 @@ input {
 #card p {
   text-align: center;
   font-weight: 600;
-  font-size: large;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #card h3 {
@@ -293,7 +299,7 @@ input {
   position: relative;
   width: 90%;
   margin: 3px;
-  height: 467px;
+  height: 500px;
   /* Next & previous buttons */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
@@ -321,7 +327,8 @@ input {
   margin-left: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 455px;
+  height: 500px;
+  padding-bottom: 4px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -340,13 +347,12 @@ input {
 #card .slideshow-container .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 53%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #042A2B;
+  margin-top: -40px;
+  color: #303030;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -357,19 +363,19 @@ input {
 }
 
 #card .slideshow-container .next {
-  right: -29px;
+  right: -30px;
   border-radius: 3px 0 0 3px;
 }
 
 #card .slideshow-container .text {
   color: #FEFAE0;
-  background-color: #042A2B;
+  background-color: #303030;
   border-radius: 10px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 80%;
-  margin-left: 50px;
+  width: 79%;
+  margin-left: 54px;
   text-align: center;
   -webkit-animation-name: zoom;
           animation-name: zoom;
@@ -401,7 +407,7 @@ input {
 
 #card .slideshow-container .active,
 #card .slideshow-container .dot:hover {
-  background-color: #042A2B;
+  background-color: #303030;
 }
 
 @-webkit-keyframes fade {
@@ -431,7 +437,7 @@ input {
 
 #card1 {
   margin: auto;
-  background-color: #FEFAE0;
+  background-color: #fbfbfb;
   border-radius: 10px;
   padding-bottom: 8px;
 }
@@ -450,7 +456,10 @@ input {
 #card1 p {
   text-align: center;
   font-weight: 600;
-  font-size: large;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #card1 h3 {
@@ -467,7 +476,7 @@ input {
   position: relative;
   width: 90%;
   margin: 3px;
-  height: 467px;
+  height: 500px;
   /* Next & previous buttons */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
@@ -495,7 +504,8 @@ input {
   margin-left: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 455px;
+  height: 500px;
+  padding-bottom: 4px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -514,13 +524,12 @@ input {
 #card1 .slideshow-container .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 53%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #042A2B;
+  margin-top: -40px;
+  color: #303030;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -531,19 +540,19 @@ input {
 }
 
 #card1 .slideshow-container .next {
-  right: -29px;
+  right: -30px;
   border-radius: 3px 0 0 3px;
 }
 
 #card1 .slideshow-container .text {
   color: #FEFAE0;
-  background-color: #042A2B;
+  background-color: #303030;
   border-radius: 10px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 80%;
-  margin-left: 50px;
+  width: 79%;
+  margin-left: 54px;
   text-align: center;
   -webkit-animation-name: zoom;
           animation-name: zoom;
@@ -575,7 +584,7 @@ input {
 
 #card1 .slideshow-container .active,
 #card1 .slideshow-container .dot:hover {
-  background-color: #042A2B;
+  background-color: #303030;
 }
 
 @keyframes fade {
@@ -596,8 +605,8 @@ input {
 
 #card1 #slider {
   position: relative;
-  width: 350px;
-  height: 450px;
+  width: 370px;
+  height: 500px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +614,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 3px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -634,7 +644,7 @@ input {
 #card1 img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 440px;
+  height: 500px;
   border-radius: 10px;
 }
 
@@ -654,12 +664,12 @@ input {
 
 #card1 a {
   color: #FEFAE0;
-  background-color: #042A2B;
+  background-color: #303030;
   border-radius: 10px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 75%;
+  width: 78%;
   margin-left: 40px;
   text-align: center;
 }
@@ -687,7 +697,7 @@ input {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #042A2B;
+  color: #303030;
   font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
@@ -715,7 +725,7 @@ input {
 
 #card2 {
   margin: auto;
-  background-color: #FEFAE0;
+  background-color: #fbfbfb;
   border-radius: 10px;
 }
 
@@ -733,7 +743,10 @@ input {
 #card2 p {
   text-align: center;
   font-weight: 600;
-  font-size: large;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #card2 h3 {
@@ -744,7 +757,7 @@ input {
 #card2 img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 220px;
+  height: 500px;
   border-radius: 10px;
   width: 100%;
 }
@@ -763,7 +776,7 @@ input {
 
 #card3 {
   margin: auto;
-  background-color: #FEFAE0;
+  background-color: #fbfbfb;
   border-radius: 10px;
 }
 
@@ -781,7 +794,10 @@ input {
 #card3 p {
   text-align: center;
   font-weight: 600;
-  font-size: large;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #card3 h3 {
@@ -793,7 +809,7 @@ input {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 220px;
+  height: 500px;
   border-radius: 10px;
 }
 
@@ -832,7 +848,7 @@ input {
 }
 
 footer {
-  background-color: #042A2B;
+  background-color: #303030;
   border-top: 1px solid #FEFAE0;
   margin-top: 10px;
 }
@@ -845,7 +861,7 @@ footer .bloc_footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #CDEDF6;
+  color: #fbfbfb;
   padding-left: 10px;
   font-size: large;
 }

@@ -16,6 +16,9 @@ function myFunction() {
     }
   }
 
+  setInterval("showSlides(1)", 4000);
+
+
   let slideIndex = 1;
   showSlides(slideIndex);
   
@@ -47,14 +50,29 @@ function myFunction() {
 
 
 
-let slide = new Array("./assets/burger.jpg", "./assets/smoothie.jpg","./assets/sushis.jpg");
-let numero = 0;
+// let slide = new Array("./assets/burger.jpg", "./assets/smoothie.jpg","./assets/sushis.jpg");
+// let numero = 0;
   
-  function ChangeSlide(sens) {
-      numero = numero + sens;
-      if (numero < 0)
-          numero = slide.length - 1;
-      if (numero > slide.length - 1)
-          numero = 0;
-      document.getElementById("slide").src = slide[numero];
-  }
+//   function ChangeSlide(sens) {
+//       numero = numero + sens;
+//       if (numero < 0)
+//           numero = slide.length - 1;
+//       if (numero > slide.length - 1)
+//           numero = 0;
+//       document.getElementById("slide").src = slide[numero];
+//   }
+
+  // fonction slide 06/09/22
+let slide = new Array("./assets/sushis.jpg", "./assets/croque.jpeg","./assets/healthy.jpg","./assets/plate_frite.jpeg","./assets/chicken.jpeg","./assets/steak.jpeg", "./assets/dessert.jpeg", "./assets/smoothie.jpg","./assets/cake.jpeg","./assets/cream.jpeg","./assets/dessert.jpeg");
+let numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+
+}
+setInterval("ChangeSlide(1)", 4000);
