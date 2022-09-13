@@ -65,7 +65,7 @@ header img
 .dropbtn /*bouton menu dropdown*/
 {
     background-color: $tertiary;
-    color: black;
+    color: $primary;
     font-weight: 700;
     padding: 16px;
     font-size: 18px;
@@ -279,6 +279,8 @@ input{
         @media#{$desktop}
         {
             align-items: center;
+            margin-left: 48px;
+            width: 84%;
         }
     }
     #precedent,
