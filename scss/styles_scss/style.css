@@ -4,8 +4,8 @@
             transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -19,8 +19,8 @@
             transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   100% {
     -webkit-transform: scale(1, 1);
@@ -209,9 +209,8 @@ header img {
 }
 
 .choice p {
-  text-align: center;
   font-size: large;
-  padding: 10px;
+  padding: 15px;
 }
 
 span {
@@ -350,7 +349,8 @@ input {
   top: 53%;
   width: auto;
   margin-top: -40px;
-  color: #303030;
+  color: #fbfbfb;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 40px;
   -webkit-transition: 0.6s ease;
@@ -363,7 +363,7 @@ input {
 }
 
 #card .slideshow-container .next {
-  right: -30px;
+  right: -11px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -372,6 +372,7 @@ input {
   background-color: #303030;
   border-radius: 10px;
   padding: 8px 12px;
+  text-decoration: none;
   position: absolute;
   bottom: 8px;
   width: 79%;
@@ -540,7 +541,8 @@ input {
   top: 53%;
   width: auto;
   margin-top: -40px;
-  color: #303030;
+  color: #fbfbfb;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 40px;
   -webkit-transition: 0.6s ease;
@@ -553,7 +555,7 @@ input {
 }
 
 #card1 .slideshow-container .next {
-  right: -30px;
+  right: -11px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -562,6 +564,7 @@ input {
   background-color: #303030;
   border-radius: 10px;
   padding: 8px 12px;
+  text-decoration: none;
   position: absolute;
   bottom: 8px;
   width: 79%;
@@ -694,6 +697,7 @@ input {
   border-radius: 10px;
   padding: 8px 12px;
   position: absolute;
+  text-decoration: none;
   bottom: 8px;
   width: 78%;
   margin-left: 40px;

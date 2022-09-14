@@ -63,7 +63,7 @@ function myFunction() {
 //   }
 
   // fonction slide 06/09/22
-let slide = new Array("./assets/sushis.jpg", "./assets/croque.jpeg","./assets/healthy.jpg","./assets/plate_frite.jpeg","./assets/chicken.jpeg","./assets/steak.jpeg", "./assets/dessert.jpeg", "./assets/smoothie.jpg","./assets/cake.jpeg","./assets/cream.jpeg","./assets/dessert.jpeg");
+let slide = new Array("./assets/sushis.jpg", "./assets/burger.jpg","./assets/pasta.jpg","./assets/burger1.jpg","./assets/chicken.jpg","./assets/plate1.jpg", "./assets/dessert.jpeg", "./assets/smoothie.jpg","./assets/cake.jpeg","./assets/cream.jpeg","./assets/dessert.jpeg");
 let numero = 0;
 
 function ChangeSlide(sens) {

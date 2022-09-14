@@ -84,7 +84,8 @@ $tertiary: #FEFAE0;
             width: auto;
             margin-top: -40px;
             // padding: 16px;
-            color: $primary;
+            color: $secondary;
+            margin-left: 10px;
             font-weight: bold;
             font-size: 40px;
             transition: 0.6s ease;
@@ -95,7 +96,7 @@ $tertiary: #FEFAE0;
         }
 
         .next {
-            right: -30px;
+            right: -11px;
             border-radius: 3px 0 0 3px;
         }
 
@@ -109,6 +110,8 @@ $tertiary: #FEFAE0;
             background-color: $primary;
             border-radius: 10px;
             padding: 8px 12px;
+            text-decoration: none;
+
             position: absolute;
             bottom: 8px;
             width: 79%;
@@ -244,7 +247,7 @@ $tertiary: #FEFAE0;
     transform: scale(1, 1);
     }
     50% {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     }
     100%{
         transform: scale(1,1);
