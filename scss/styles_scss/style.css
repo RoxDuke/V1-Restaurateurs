@@ -875,8 +875,9 @@ input {
 }
 
 .list-group li {
-  padding: 5px;
+  padding: 3px;
   margin-bottom: 15px;
+  padding-left: 0%;
 }
 
 footer {
