@@ -23,7 +23,7 @@
     </div>
 
     <div class="introduction">
-      <h1>Découvrez notre carte aux mille et une saveurs !</h1>
+      <h1>Découvrez notre carte aux mille et une saveur !</h1>
       <p>Préparée par nos soins avec des produits de qualité.</p>
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">NOTRE CARTE</button>
@@ -52,7 +52,43 @@
         <p>Plat + Dessert = 28 €</p>
 
 
-        <div class="slideshow-container">
+        <div class='caroussel_diapo'>
+          <input checked id="carou_un" name="rotation" type="radio" onclick="stopSlide()">
+          <label for="carou_un"></label>
+
+          <input id="carou_deux" name="rotation" type="radio" onclick="stopSlide()">
+          <label for="carou_deux"></label>
+
+          <input id="carou_trois" name="rotation" type="radio" onclick="stopSlide()">
+          <label for="carou_trois"></label>
+
+          <!-- <input id="carou_quatre" name="rotation" type="radio">
+          <label for="carou_quatre"></label> -->
+
+          <!-- <input id="carou_cinq" name="rotation" type="radio">
+          <label for="carou_cinq"></label>  -->
+          <!-- 
+          <input id="carou_six" name="rotation" type="radio">
+          <label for="carou_six"></label> -->
+
+          <!-- <input id="carou_sept" name="rotation" type="radio">
+          <label for="carou_sept"></label> -->
+
+          <!-- <input id="carou_huit" name="rotation" type="radio">
+          <label for="carou_huit"></label> -->
+
+          <div class="contenu_carou">
+
+              <div class="caroussel">
+                  <img class="MyImg" src="./assets/sushis.jpg" alt="plate_sushis" onclick="zoomImage1(0)">
+                  <img class="MyImg" src="./assets/burger.jpg" alt="plate_burger" onclick="zoomImage1(1)">
+                  <img class="MyImg" src="./assets/vegi.jpg" alt="plate_vegi" onclick="zoomImage1(2)">
+                  <!-- <img class="MyImg" src="./assets/chicken.jpg" alt="plate_chicken"> -->
+              </div>
+          </div>
+      </div>
+
+        <!-- <div class="slideshow-container">
 
           <div class="mySlides fade">
             <div class="numbertext"></div>
@@ -72,10 +108,10 @@
             <a href="menu3.html" class="text">MENU VEGGIE</a>
           </div>
 
-          <!-- Next and previous buttons -->
+           Next and previous buttons
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -85,17 +121,19 @@
         <h2>À LA CARTE</h2>
         <h3>ENTRÉES - PLATS - DESSERTS</h3>
 
-        <div id="slider">
-          <img src="./assets/plate1.jpg" alt="plats" id="slide" style="width:100%">
+        <!-- <div id="slider">
+          <img src="./assets/plate1.jpg" alt="plats" id="slide" >
           <div id="precedent" onclick="ChangeSlide(-1)"></div>
 
-          <a href="carte.html" class="text">TOUT VOIR</a>
+          <a href="carte.html" class="text">TOUT VOIR</a> -->
 
 <!-- 
            <div id="precedent" onclick="ChangeSlide(-1)">&#10094;</div>
           <div id="suivant" onclick="ChangeSlide(1)">&#10095;</div> --> 
-        </div>
+        <!-- </div> -->
+
       </div>
+      
     </div>
 
     <!-- <div data-aos="fade-down-right"> -->
@@ -103,9 +141,9 @@
 
         <div class="card-body">
           <h2>NOS BOISSONS</h2>
-          <img src="./assets/drink.jpeg" alt="vin">
+          <!-- <img src="./assets/drink.jpeg" alt="vin"> -->
 
-          <div id="card1" style="width:90%">
+          <!-- <div id="card1" style="width:90%">
             <ul class="list-group">
               <li>Ice Tea mangue & glace pilée ___________ <strong>5 €</strong></li>
               <li>Virgin mojito fruits rouges & glace _____ <strong>8 €</strong></li>
@@ -114,7 +152,7 @@
               <li>Ice Tea pêches & glace pilée ____________ <strong> 5 €</strong></li>
             </ul>
             
-          </div>
+          </div> -->
         </div>
         <a href="drink.html" class="text">TOUT VOIR</a>
       </div>
@@ -124,9 +162,9 @@
 
         <div class="card-body">
           <h2>NOS VINS</h2>
-          <img src="./assets/vin.jpeg" alt="vin">
+          <!-- <img src="./assets/vin.jpeg" alt="vin"> -->
         </div>
-          <div id="card1" style="width:90%">
+          <!-- <div id="card1" style="width:90%">
             <ul class="list-group">
               <li>Vin rouge - Bordeaux 2018____________ <strong>10 €</strong></li>
               <li>Vin rouge - Côte du Rhône 2014________ <strong>12 €</strong></li>
@@ -134,7 +172,7 @@
               <li>Vin blanc sec - Chardonnay 2015 _______ <strong>12 €</strong></li>
               <li>Vin blanc moelleux - Sauternes 2014___ <strong>12 €</strong></li>
             </ul>
-          </div>
+          </div> -->
           <a href="drink.html" class="text">TOUT VOIR</a>
 
       </div>
@@ -162,6 +200,8 @@
 <script>
   AOS.init();
 </script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
 </html>

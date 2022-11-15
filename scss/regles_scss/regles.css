@@ -1,33 +1,25 @@
 @-webkit-keyframes zoom {
   0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
-
 @keyframes zoom {
   0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
-
 @-webkit-keyframes slidein {
   from {
     margin-left: 50%;
@@ -38,7 +30,6 @@
     width: 200%;
   }
 }
-
 @keyframes slidein {
   from {
     margin-left: 50%;
@@ -48,5 +39,4 @@
     margin-left: 0%;
     width: 200%;
   }
-}
-/*# sourceMappingURL=regles.css.map */
+}/*# sourceMappingURL=regles.css.map */
